@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * Main - A program that prints a line with printf
+ *
  * Return: 0
- */
+*/
 
 int main(void)
 {
