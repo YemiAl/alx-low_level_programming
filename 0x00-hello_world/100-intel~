@@ -1,0 +1,11 @@
+#include <stdio.h>
+/**
+ * main - A program that generates assembly code
+ *
+ * Return: 0
+ */
+
+int main(void)
+{
+
+}
