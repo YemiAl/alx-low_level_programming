@@ -18,4 +18,7 @@ putchar(i - 32);
 
 putchar('\n');
 }
+
+return (0);
+
 }
