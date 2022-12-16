@@ -9,13 +9,19 @@
 int main(void)
 {
 char i;
+char j;
 
 for (i = 'a'; i <= 'z'; i++)
 {
 
 putchar(i);
 
-putchar(i - 32);
+}
+
+
+for (j = 'A'; j <= 'Z'; j++)
+{
+putchar(j);
 
 }
 
