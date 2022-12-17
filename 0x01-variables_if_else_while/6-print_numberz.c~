@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+/**
+ * main - Program that prints single digits with putchar
+ *
+ * Return: All numbers
+ */
+
+int main(void)
+
+{
+
+
+}
