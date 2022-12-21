@@ -2,7 +2,7 @@
 
 /**
  * cap_string - changes characters to capital
- *
+ * @str: string
  * Return: char
  */
 

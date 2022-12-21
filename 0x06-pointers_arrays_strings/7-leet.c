@@ -2,7 +2,7 @@
 
 /**
  * leet - encodes a string
- *
+ * @n: input
  * Return: n
  */
 
@@ -25,6 +25,6 @@ char *leet(char *n)
 		}
 	}
 
-	return(n);
+	return (n);
 
 }
