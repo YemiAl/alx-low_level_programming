@@ -1,0 +1,7 @@
+#include "main.h"
+
+/**
+ * cap_string - changes characters to capital
+ *
+ * Return: char
+ */

@@ -1,0 +1,9 @@
+#include "main.h"
+
+/**
+ * leet - encodes a string
+ *
+ * Return: n
+ */
+
+char
