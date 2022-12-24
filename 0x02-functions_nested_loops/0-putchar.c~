@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+ * print_word - program that prints a word with _putchar
+ *
+ */
+
+int main(void)
+{
+	char* i;
+
+
+
+}
