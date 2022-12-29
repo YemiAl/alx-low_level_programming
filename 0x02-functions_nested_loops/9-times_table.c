@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * main - program to print 9 times table
+ * void times_table - program to print 9 times table
  *
- * Return: 0
  */
 
-int main(void)
+void times_table(void)
 {
 	int j = 0;
 	int a, b;
@@ -45,5 +44,4 @@ int main(void)
 
 		_putchar('\n');
 	}
-	return (0);
 }
