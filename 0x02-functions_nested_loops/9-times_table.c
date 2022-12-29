@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void times_table - program to print 9 times table
+ * times_table - program to print 9 times table
  *
  */
 
@@ -17,6 +17,7 @@ void times_table(void)
 		_putchar('0'); /* print the first 0 and comma */
 		_putchar(',');
 		_putchar(' ');
+		_putchar(' ');
 
 		for (b = 0; b <= 8; b++) /* print each line of multiplication*/
 		{
@@ -26,18 +27,20 @@ void times_table(void)
 			{
 				_putchar((i / 10) + '0');
 				_putchar((i % 10) + '0');
+				if (b != 8)
+					_putchar(',');
+					_putchar(' ');
 			}
 
 			else
 			{
 				_putchar(i + '0');
+				if (b != 8)
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 			}
 
-			if (b != 8)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
 		}
 
 		j++;
