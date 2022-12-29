@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - program to print 9 times table
@@ -15,9 +15,9 @@ int main(void)
 	{
 		int i = 0;
 
-		putchar('0'); /* print the first 0 and comma */
-		putchar(',');
-		putchar(' ');
+		_putchar('0'); /* print the first 0 and comma */
+		_putchar(',');
+		_putchar(' ');
 
 		for (b = 0; b <= 8; b++) /* print each line of multiplication*/
 		{
@@ -25,25 +25,25 @@ int main(void)
 
 			if (i > 9)
 			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
+				_putchar((i / 10) + '0');
+				_putchar((i % 10) + '0');
 			}
 
 			else
 			{
-				putchar(i + '0');
+				_putchar(i + '0');
 			}
 
 			if (b != 8)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 
 		j++;
 
-		putchar('\n');
+		_putchar('\n');
 	}
 	return (0);
 }
