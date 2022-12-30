@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+ * add - function that add two inputs
+ * @a: input 1
+ * @b: input 2
+ * Return: output
+ */
+
+int add(int a, int b)
+{
+	return (a + b);
+
+}
