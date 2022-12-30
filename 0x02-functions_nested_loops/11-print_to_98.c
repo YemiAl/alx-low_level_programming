@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,12 +14,11 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			_putchar(i + '0');
+			printf("%i", i);
 
 			if (i != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 		}
 	}
@@ -27,12 +27,11 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			_putchar(i + '0');
+			printf("%i", i);
 
 			if (i != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 
 		}
@@ -41,8 +40,8 @@ void print_to_98(int n)
 
 	else
 	{
-		_putchar(n + '0');
+		printf("%i", n);
 	}
 
-	_putchar('\n');
+	printf("\n");
 }
