@@ -37,11 +37,13 @@ void print_times_table(int n)
 					_putchar((i % 10) + '0');
 				}
 				else
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(i + '0');
+				}
 			}
 			j++;
 			_putchar('\n');
