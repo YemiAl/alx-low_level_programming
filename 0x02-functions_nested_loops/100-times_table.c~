@@ -1,0 +1,50 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * print_times_table - program that prints n times table
+ * @n: number of times table to be printed
+ */
+
+void print_times_table(int n)
+{
+	int j = 0;
+	int a, b;
+
+	if ((n <= 15) && (n >= 0))
+	{
+		for (a = 0; a <= n; a++) /*print 10 lines of increasing diff */
+		{
+			int i = 0;
+
+			putchar('0'); /* print the first 0 */
+			for (b = 0; b <= (n - 1); b++)
+			{
+				i = i + j;
+				if (i > 9 && i < 100)
+				{
+					putchar(',');
+					putchar(' ');
+					putchar(' ');
+					putchar((i / 10) + '0');
+					putchar((i % 10) + '0');
+				}
+				else if (i > 99 && i < 1000)
+				{
+					putchar(',');
+					putchar(' ');
+					putchar((i / 100) + '0');
+					putchar(((i / 10) % 10) + '0');
+					putchar((i % 10) + '0');
+				}
+				else
+					putchar(',');
+					putchar(' ');
+					putchar(' ');
+					putchar(' ');
+					putchar(i + '0');
+			}
+			j++;
+			putchar('\n');
+		}
+	}
+}
