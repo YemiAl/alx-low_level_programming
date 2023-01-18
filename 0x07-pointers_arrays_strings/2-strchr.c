@@ -7,17 +7,23 @@
  *
  * Return: pointer to the first occurence
  */
-
 char *_strchr(char *s, char c)
+
 {
-	int i;
+	while (*s)
 
-	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == c)
+		if (*s != c)
+			s++;
 
-			return (s + i);
+		else
+			return (s);
+
 	}
+
+	if (c == '\0')
+
+		return (s);
 
 	return (NULL);
 }
