@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator: function pointer that also takes an array as an argument
+ * array_iterator - function pointer that also takes an array as an argument
  * @array: array to be actioned on
  * @size: size of the array
  * @action: function pointer
