@@ -7,7 +7,8 @@
 
 void print_times_table(int n)
 {
-	int a, b, j = 0;
+	int a, b, i, j = 0;
+
 	if ((n <= 15) && (n >= 0))
 	{
 		for (a = 0; a <= n; a++) /*print 10 lines of increasing diff */
@@ -18,9 +19,10 @@ void print_times_table(int n)
 			for (b = 0; b <= (n - 1); b++)
 			{
 				i = i + j;
+				_putchar(',');
+
 				if (i > 9 && i < 100)
 				{
-					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((i / 10) + '0');
@@ -28,7 +30,6 @@ void print_times_table(int n)
 				}
 				else if (i > 99 && i < 1000)
 				{
-					_putchar(',');
 					_putchar(' ');
 					_putchar((i / 100) + '0');
 					_putchar(((i / 10) % 10) + '0');
@@ -36,7 +37,6 @@ void print_times_table(int n)
 				}
 				else
 				{
-					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
