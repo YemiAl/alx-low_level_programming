@@ -7,9 +7,7 @@
 
 void print_times_table(int n)
 {
-	int j = 0;
-	int a, b;
-
+	int a, b, j = 0;
 	if ((n <= 15) && (n >= 0))
 	{
 		for (a = 0; a <= n; a++) /*print 10 lines of increasing diff */
