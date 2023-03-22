@@ -11,14 +11,14 @@ int main(void)
 {
 	int i = 3;
 
-	unsigned int x = 1, y = 2, sum;
+	unsigned long long int x = 1, y = 2, sum;
 
-	printf("%u, %u, ", x, y);
+	printf("%llu, %llu, ", x, y);
 
 	while (i <= 50)
 	{
 		sum = x + y;
-		printf("%u", sum);
+		printf("%llu", sum);
 
 		if (i != 50)
 		{
