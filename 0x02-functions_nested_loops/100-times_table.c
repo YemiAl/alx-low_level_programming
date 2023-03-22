@@ -13,7 +13,7 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++) /*print 10 lines of increasing diff */
 		{
-			int i = 0;
+			i = 0;
 
 			_putchar('0'); /* print the first 0 */
 			for (b = 0; b <= (n - 1); b++)
