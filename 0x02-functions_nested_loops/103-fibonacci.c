@@ -11,9 +11,9 @@ int main(void)
 {
 	int i = 0;
 
-	unsigned int x = 1, y = 2, sum = 0;
+	unsigned long int x = 1, y = 2, sum = 0;
 
-	printf("%u", y);
+	printf("%lu", y);
 
 	while (sum <= 4000000)
 	{
@@ -24,7 +24,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 
-			putchar("%u", sum);
+			printf("%lu", sum);
 		}
 
 		x = y;
@@ -32,4 +32,6 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+
+	return (0);
 }
