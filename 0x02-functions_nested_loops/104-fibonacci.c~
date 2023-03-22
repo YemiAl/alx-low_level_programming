@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 3;
+
+    unsigned long long int x = 1;
+
+    unsigned long long int y = 2;
+
+    unsigned long long int sum;
+
+    printf("%llu, %llu, ", x, y);
+
+    while (i <= 98)
+    {
+        sum = x + y;
+
+        printf("%llu", sum);
+
+        if (i != 98)
+        {
+            putchar(',');
+            putchar(' ');
+        }
+
+        x = y;
+
+        y = sum;
+
+        i++;
+    }    
+}
