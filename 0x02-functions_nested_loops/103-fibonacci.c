@@ -13,7 +13,7 @@ int main(void)
 
 	unsigned int x = 1, y = 2, sum = 0;
 
-	printf("%d", y);
+	printf("%u", y);
 
 	while (sum <= 4000000)
 	{
