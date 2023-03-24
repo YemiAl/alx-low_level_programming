@@ -14,32 +14,20 @@
 int main(void)
 {
 	int i;
-	int fizz, buzz;
 
 	for (i = 1; i <= 100; i++)
 	{
-		fizz = i % 3;
-		buzz = i % 5;
-
-		if (fizz == 0 && buzz != 0)
-		{
-			printf("Fizz ");
-		}
-
-		if (fizz != 0 && buzz == 0)
-		{
-			printf("Buzz ");
-		}
-
-		if (fizz == 0 && buzz == 0)
-		{
-			printf("FizzBuzz ");
-		}
-
-		if (fizz != 0 && buzz != 0)
-			printf("%d ", i);
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%i", i);
+		if (i < 100)
+			printf(" ");
 	}
 	printf("\n");
-
 	return (0);
 }
