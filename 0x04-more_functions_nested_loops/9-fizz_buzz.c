@@ -39,6 +39,7 @@ int main(void)
 		if (fizz != 0 && buzz != 0)
 			printf("%d ", i);
 	}
+	printf("\n");
 
 	return (0);
 }
