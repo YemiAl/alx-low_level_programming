@@ -10,39 +10,23 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-	int count = 0;
+	int j, i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s)
 	{
-		int check = 0; /* counter for when the values are not same */
-		int check_true = 0; /** counter for when the values are same */
-
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] != accept[j])
+			if (s[0] == accept[j])
 			{
-				check++;
-			}
-
-			else
-			{
-				check_true++;
-				break;
+				return (s);
 			}
 		}
 
-		if (check != 0 && check_true == 0)
+		if (accept[j] == '\0')
 		{
-			count++;
+			s++;
 		}
-
-		if (check_true != 0)
-			break;
 	}
 
-	if (count == 0)
-		return (NULL);
-	else
-		return (s + count);
+	return (NULL);
 }
