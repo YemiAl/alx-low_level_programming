@@ -9,7 +9,7 @@
 int _sqrt_recursion(int n)
 {
 	int count = 0;
-	
+
 	if ((n % 2) == 1)
 	{
 		return (-1);
@@ -26,3 +26,4 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
+}
