@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - program that calculates amount of change required
+ * @argc: count of arguments
+ * @argv: argument vectors
+ *
+ * Return: 0 or 1 if error
+ */
+
 int main(int argc, char **argv)
 {
 	int i, x, result, count = 0;
