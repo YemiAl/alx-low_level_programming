@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	if (argc == 1) /* if no number is passed */
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	else
