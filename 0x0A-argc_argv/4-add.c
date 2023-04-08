@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
 			else
 			{
-				str_to_len = strtoi(argv[i]);
+				str_to_len = strtol(argv[i]);
 
 				sum = sum + str_to_len;
 			}
