@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int i, x, result, count = 0;
 
-	int money[] = {25, 10, 5, 2, 1};
+	const int money[] = {25, 10, 5, 2, 1};
 
 	int total = atoi(argv[1]);
 
