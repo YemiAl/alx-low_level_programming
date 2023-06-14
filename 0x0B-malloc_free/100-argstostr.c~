@@ -1,0 +1,48 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * _strlen - function that returns the length of a sting
+ * @str: string to be counted
+ *
+ * Return: Length of the string
+ */
+
+int _strlen(char *str)
+{
+  int count = 0;
+
+  while (*str)
+    {
+      count++;
+      str++;
+    }
+  return (count);
+}  
+
+
+
+/**
+ * argstostr - function that concatenates the arguments
+ * @ac: argument count
+ * @av: argument vector
+ *
+ * Return: pointer to a new string
+ */
+
+char *argstostr(int ac, char **av)
+{
+  int i, j, count;
+
+  if (ac == 0)
+    return (NULL);
+
+  for (i = 0; i < ac; i++)
+    {
+      count = _strlen(argv[i]);
+
+      for (j = 0; j < count; j++)
+	{
+	  _putchar
+    
+    
