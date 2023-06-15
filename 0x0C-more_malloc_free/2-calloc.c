@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _calloc - function that allocates memory for an array of elements
- * @nmemb: allocate memory for array
- * @size: allocate element of size bytes
+ * _calloc - function that allocates mem for an array
+ * @nmemb: number of array elemets
+ * @size: size of array in bytes
  *
- * Return: pointer to the allocated memory.
+ * Return: pointer to the new memory.
  */
 
 
