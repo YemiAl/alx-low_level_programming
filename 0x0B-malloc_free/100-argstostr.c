@@ -10,16 +10,15 @@
 
 int _strlen(char *str)
 {
-  int count = 0;
+	int count = 0;
 
-  while (*str)
-    {
-      count++;
-      str++;
-    }
-  return (count);
-}  
-
+	while (*str)
+	{
+		count++;
+		str++;
+	}
+	return (count);
+}
 
 
 /**
@@ -32,25 +31,37 @@ int _strlen(char *str)
 
 char *argstostr(int ac, char **av)
 {
-  int i, j, count, total = 0;
-  char *copy;
+	int i, j, count, total = 0;
+	char *copy;
 
-  if (ac == 0 || !av)
-    return (NULL);
+	if (ac == 0 || !av)
+		return (NULL);
 
-  for (i = 0; i < ac; i++)
-    {
-      count = _strlen(av[i]);
-
-      for (j = 0; j < count; j++)
+	for (i = 0; i < ac; i++) /* find the total no of char for malloc*/
 	{
-	  _putchar(av[i][j]);
-	  _putchar('\n');
-	  total++;
+		count = _strlen(av[i]);
+		total = total + count;
 	}
-    }
-  copy[total] = '\0';
-  return (copy);
+
+	copy = malloc((total + 1) * sizeof(char));
+
+	if (copy == NULL)
+		return (NULL);
+
+	total = 0;
+
+	for (i = 0; i < ac; i++)
+	{
+		count = _strlen(av[i]);
+
+		for (j = 0; j < count; j++)
+		{
+			_putchar(av[i][j]);
+			total++;
+		}
+		_putchar('\n');
+	}
+
+	copy[total] = '\0';
+	return (copy);
 }
-    
-    
