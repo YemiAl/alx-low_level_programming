@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 		total = total + count;
 	}
 
-	copy = malloc((total + 1) * sizeof(char));
+	copy = malloc((total + ac + 1) * sizeof(char));
 
 	if (copy == NULL)
 		return (NULL);
@@ -59,7 +59,9 @@ char *argstostr(int ac, char **av)
 			_putchar(av[i][j]);
 			total++;
 		}
+		copy[total] = '\n';
 		_putchar('\n');
+		total++;
 	}
 
 	copy[total] = '\0';
