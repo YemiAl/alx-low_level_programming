@@ -6,9 +6,9 @@
  *
  */
 
-void free_list(list_t **head)
+void free_list(list_t *head)
 {
-	list *temp;
+	list_t *temp;
 
 	while (head)
 	{
