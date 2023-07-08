@@ -1,0 +1,1 @@
+This project introduces bit manipulation. It has 5 normal tasks and 2 advanced
